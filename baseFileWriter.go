@@ -378,7 +378,7 @@ func (writer *baseFileWriter) Retentions() int64 {
 	return writer.retentions
 }
 
-// SetExpiredDays set how many days of logs will keep
+// SetRetentions set how many days of logs will keep
 func (writer *baseFileWriter) SetRetentions(retentions int64) {
 	writer.lock.Lock()
 	defer writer.lock.Unlock()
